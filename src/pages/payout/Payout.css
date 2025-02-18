@@ -1,0 +1,218 @@
+ .payout-container {
+    background: linear-gradient(135deg, #ffffff, #e6f7ff);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.12);
+    border: 1px solid #e1eff7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .payout-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(0, 123, 255, 0.2);
+  }
+  
+  .payout-header {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .payout-header::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #6fcf97);
+    border-radius: 2px;
+  }
+  
+  .payout-table-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.08);
+  }
+  
+  .payout-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+  }
+  
+  .payout-table th {
+    background-color: #f1f9ff;
+    color: #007bff;
+    font-weight: 600;
+    padding: 14px;
+    text-align: left;
+    border-bottom: 3px solid #e1eff7;
+    font-size: 1rem;
+  }
+  
+  .payout-table td {
+    padding: 14px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .payout-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .payout-table tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .rate-input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid rgba(133, 189, 215, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .rate-input:focus {
+    outline: none;
+    border-color: rgb(16, 137, 211);
+    box-shadow: 0 0 0 2px rgba(16, 137, 211, 0.2);
+  }
+  
+  .payout-amount {
+    font-weight: 600;
+    color: #28a745;
+  }
+  
+  .payout-footer {
+    padding: 1.25rem;
+    gap: 5px;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 123, 255, 0.2);
+  }
+  
+  @media (min-width: 768px) {
+    
+    .payout-footer {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  .total-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .export-buttons {
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .export-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .export-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .export-button.csv {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .export-button.csv:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+  }
+  
+  .export-button.pdf {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .export-button.pdf:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+  }
+  
+  @media (max-width: 640px) {
+    .payout-container {
+      padding: 15px;
+    }
+  
+    .payout-header {
+      font-size: 1.5rem;
+    }
+  
+    .payout-table th,
+    .payout-table td {
+      padding: 8px;
+      font-size: 0.85rem;
+    }
+  
+    .rate-input {
+      width: 70px;
+      padding: 6px;
+      font-size: 0.85rem;
+    }
+  
+    .total-amount {
+      font-size: 1.2rem;
+    }
+  
+    .export-button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  
+    .export-button svg {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .payout-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .export-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+  
+    .export-button {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  
+   

@@ -1,0 +1,14 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: 70px; /* Adjust according to your header height */
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 70px - 50px); /* Header height + Footer height */
+}

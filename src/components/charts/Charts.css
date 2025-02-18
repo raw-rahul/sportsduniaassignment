@@ -1,0 +1,131 @@
+/* Charts.css */
+.charts-container {
+    width: 100%;
+  }
+  
+  .charts-main-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .charts-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  @media (min-width: 1024px) {
+    .charts-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .chart-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: rgba(133, 189, 215, 0.2) 0px 8px 15px -8px;
+    border: 1px solid rgba(133, 189, 215, 0.2);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(133, 189, 215, 0.3) 0px 12px 20px -8px;
+  }
+  
+  .chart-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .chart-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .chart-content {
+      flex-direction: row;
+    }
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 250px;
+  }
+  
+  @media (min-width: 768px) {
+    .chart-container {
+      width: 60%;
+    }
+  }
+  
+  .chart-details {
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .chart-details {
+      width: 40%;
+      padding: 0 0 0 15px;
+    }
+  }
+  
+  .chart-summary-card {
+    background-color: #f8f9fd;
+    border-radius: 10px;
+    padding: 15px;
+    height: 90%;
+    box-shadow: rgba(133, 189, 215, 0.1) 0px 4px 8px -4px;
+  }
+  
+  .chart-summary-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .chart-detail-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .chart-detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .chart-detail-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+  
+  .chart-detail-name {
+    flex: 1;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .chart-detail-value {
+    font-weight: 600;
+    color: #333;
+    margin-left: 8px;
+  }
